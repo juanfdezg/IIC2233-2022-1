@@ -1,0 +1,988 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>ventana_juego</class>
+ <widget class="QWidget" name="ventana_juego">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1204</width>
+    <height>860</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>DCCasillas</string>
+  </property>
+  <property name="windowIcon">
+   <iconset>
+    <normaloff>../../Sprites/Logos/logo.png</normaloff>../../Sprites/Logos/logo.png</iconset>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color: lightblue;</string>
+  </property>
+  <widget class="QLabel" name="label">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>130</y>
+     <width>811</width>
+     <height>711</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="pixmap">
+    <pixmap>../../Sprites/Juego/tablero.png</pixmap>
+   </property>
+   <property name="scaledContents">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_2">
+   <property name="geometry">
+    <rect>
+     <x>860</x>
+     <y>110</y>
+     <width>311</width>
+     <height>161</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: white;
+border-radius: 20px;
+border: 2px solid black;</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_3">
+   <property name="geometry">
+    <rect>
+     <x>860</x>
+     <y>300</y>
+     <width>311</width>
+     <height>161</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: white;
+border-radius: 20px;
+border: 2px solid black;</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_4">
+   <property name="geometry">
+    <rect>
+     <x>860</x>
+     <y>490</y>
+     <width>311</width>
+     <height>161</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: white;
+border-radius: 20px;
+border: 2px solid black;</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_5">
+   <property name="geometry">
+    <rect>
+     <x>860</x>
+     <y>680</y>
+     <width>311</width>
+     <height>161</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: white;
+border-radius: 20px;
+border: 2px solid black;</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_6">
+   <property name="geometry">
+    <rect>
+     <x>120</x>
+     <y>20</y>
+     <width>101</width>
+     <height>101</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: transparent;</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="pixmap">
+    <pixmap>../../Sprites/Logos/dado.png</pixmap>
+   </property>
+   <property name="scaledContents">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="boton_dado">
+   <property name="geometry">
+    <rect>
+     <x>270</x>
+     <y>30</y>
+     <width>93</width>
+     <height>28</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Tirar dado</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="contador_numero">
+   <property name="geometry">
+    <rect>
+     <x>270</x>
+     <y>70</y>
+     <width>191</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color:transparent;
+font-size: 12pt</string>
+   </property>
+   <property name="text">
+    <string>Número obtenido: </string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_jugador_turno">
+   <property name="geometry">
+    <rect>
+     <x>690</x>
+     <y>20</y>
+     <width>391</width>
+     <height>71</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(0, 200, 249);
+font-size: 15pt;
+font-weight: bold;</string>
+   </property>
+   <property name="text">
+    <string>      Jugador de turno: </string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="fichas_dobles_azul">
+   <property name="geometry">
+    <rect>
+     <x>40</x>
+     <y>150</y>
+     <width>81</width>
+     <height>91</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: transparent;</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="pixmap">
+    <pixmap>../../Sprites/Fichas/Dobles/fichas-azules.png</pixmap>
+   </property>
+   <property name="scaledContents">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="QLabel" name="fichas_dobles_amarillo">
+   <property name="geometry">
+    <rect>
+     <x>700</x>
+     <y>150</y>
+     <width>81</width>
+     <height>91</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: transparent;</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="pixmap">
+    <pixmap>../../Sprites/Fichas/Dobles/fichas-amarillas.png</pixmap>
+   </property>
+   <property name="scaledContents">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="QLabel" name="fichas_dobles_rojo">
+   <property name="geometry">
+    <rect>
+     <x>40</x>
+     <y>730</y>
+     <width>81</width>
+     <height>91</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: transparent;</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="pixmap">
+    <pixmap>../../Sprites/Fichas/Dobles/fichas-rojas.png</pixmap>
+   </property>
+   <property name="scaledContents">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="QLabel" name="fichas_dobles_verde">
+   <property name="geometry">
+    <rect>
+     <x>710</x>
+     <y>730</y>
+     <width>81</width>
+     <height>91</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: transparent;</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="pixmap">
+    <pixmap>../../Sprites/Fichas/Dobles/fichas-verdes.png</pixmap>
+   </property>
+   <property name="scaledContents">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="QLabel" name="fichas_dobles_amarillo_2">
+   <property name="geometry">
+    <rect>
+     <x>440</x>
+     <y>270</y>
+     <width>81</width>
+     <height>81</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: transparent;</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="pixmap">
+    <pixmap>../../Sprites/Juego/estrella.png</pixmap>
+   </property>
+   <property name="scaledContents">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="QLabel" name="fichas_dobles_amarillo_3">
+   <property name="geometry">
+    <rect>
+     <x>570</x>
+     <y>510</y>
+     <width>81</width>
+     <height>81</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: transparent;</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="pixmap">
+    <pixmap>../../Sprites/Juego/estrella.png</pixmap>
+   </property>
+   <property name="scaledContents">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="QLabel" name="fichas_dobles_amarillo_4">
+   <property name="geometry">
+    <rect>
+     <x>310</x>
+     <y>620</y>
+     <width>81</width>
+     <height>81</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: transparent;</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="pixmap">
+    <pixmap>../../Sprites/Juego/estrella.png</pixmap>
+   </property>
+   <property name="scaledContents">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="QLabel" name="fichas_dobles_amarillo_5">
+   <property name="geometry">
+    <rect>
+     <x>170</x>
+     <y>390</y>
+     <width>81</width>
+     <height>81</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: transparent;</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="pixmap">
+    <pixmap>../../Sprites/Juego/estrella.png</pixmap>
+   </property>
+   <property name="scaledContents">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="QLabel" name="ficha_azul1">
+   <property name="geometry">
+    <rect>
+     <x>60</x>
+     <y>150</y>
+     <width>81</width>
+     <height>91</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: transparent;</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="pixmap">
+    <pixmap>../../Sprites/Fichas/Simples/ficha-azul.png</pixmap>
+   </property>
+   <property name="scaledContents">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="QLabel" name="ficha_azul2">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>150</y>
+     <width>81</width>
+     <height>91</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: transparent;</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="pixmap">
+    <pixmap>../../Sprites/Fichas/Simples/ficha-azul.png</pixmap>
+   </property>
+   <property name="scaledContents">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_jugador1">
+   <property name="geometry">
+    <rect>
+     <x>970</x>
+     <y>110</y>
+     <width>171</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: transparent;
+font-size: 12pt;
+font-weight: bold;</string>
+   </property>
+   <property name="text">
+    <string>Jugador 1</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="ficha_azul3">
+   <property name="geometry">
+    <rect>
+     <x>860</x>
+     <y>150</y>
+     <width>81</width>
+     <height>91</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: transparent;</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="pixmap">
+    <pixmap>../../Sprites/Fichas/Simples/ficha-azul.png</pixmap>
+   </property>
+   <property name="scaledContents">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="QLabel" name="contador_turno1">
+   <property name="geometry">
+    <rect>
+     <x>970</x>
+     <y>150</y>
+     <width>71</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: transparent;
+font-size:9pt</string>
+   </property>
+   <property name="text">
+    <string>Turno: 1</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_fichas_base1">
+   <property name="geometry">
+    <rect>
+     <x>970</x>
+     <y>180</y>
+     <width>161</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: transparent;
+font-size:9pt</string>
+   </property>
+   <property name="text">
+    <string>Fichas en base: 2</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_fichas_color1">
+   <property name="geometry">
+    <rect>
+     <x>970</x>
+     <y>210</y>
+     <width>161</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: transparent;
+font-size:9pt</string>
+   </property>
+   <property name="text">
+    <string>Fichas en color: 0</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_fichas_victoria1">
+   <property name="geometry">
+    <rect>
+     <x>970</x>
+     <y>240</y>
+     <width>161</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: transparent;
+font-size:9pt</string>
+   </property>
+   <property name="text">
+    <string>Fichas en victoria: 0</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_fichas_victoria2">
+   <property name="geometry">
+    <rect>
+     <x>970</x>
+     <y>430</y>
+     <width>161</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: transparent;
+font-size:9pt</string>
+   </property>
+   <property name="text">
+    <string>Fichas en victoria: 0</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_jugador2">
+   <property name="geometry">
+    <rect>
+     <x>970</x>
+     <y>300</y>
+     <width>171</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: transparent;
+font-size: 12pt;
+font-weight: bold;</string>
+   </property>
+   <property name="text">
+    <string>Jugador 2</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="contador_turno2">
+   <property name="geometry">
+    <rect>
+     <x>970</x>
+     <y>340</y>
+     <width>71</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: transparent;
+font-size:9pt</string>
+   </property>
+   <property name="text">
+    <string>Turno: 2</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_fichas_base2">
+   <property name="geometry">
+    <rect>
+     <x>970</x>
+     <y>370</y>
+     <width>161</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: transparent;
+font-size:9pt</string>
+   </property>
+   <property name="text">
+    <string>Fichas en base: 2</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="ficha_verde3">
+   <property name="geometry">
+    <rect>
+     <x>860</x>
+     <y>340</y>
+     <width>81</width>
+     <height>91</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: transparent;</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="pixmap">
+    <pixmap>../../Sprites/Fichas/Simples/ficha-verde.png</pixmap>
+   </property>
+   <property name="scaledContents">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_fichas_color2">
+   <property name="geometry">
+    <rect>
+     <x>970</x>
+     <y>400</y>
+     <width>161</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: transparent;
+font-size:9pt</string>
+   </property>
+   <property name="text">
+    <string>Fichas en color: 0</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_fichas_victoria3">
+   <property name="geometry">
+    <rect>
+     <x>970</x>
+     <y>620</y>
+     <width>161</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: transparent;
+font-size:9pt</string>
+   </property>
+   <property name="text">
+    <string>Fichas en victoria: 0</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_jugador3">
+   <property name="geometry">
+    <rect>
+     <x>970</x>
+     <y>490</y>
+     <width>171</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: transparent;
+font-size: 12pt;
+font-weight: bold;</string>
+   </property>
+   <property name="text">
+    <string>Jugador 3</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="contador_turno3">
+   <property name="geometry">
+    <rect>
+     <x>970</x>
+     <y>530</y>
+     <width>71</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: transparent;
+font-size:9pt</string>
+   </property>
+   <property name="text">
+    <string>Turno: 3</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_fichas_base3">
+   <property name="geometry">
+    <rect>
+     <x>970</x>
+     <y>560</y>
+     <width>161</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: transparent;
+font-size:9pt</string>
+   </property>
+   <property name="text">
+    <string>Fichas en base: 2</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="ficha_amarillo3">
+   <property name="geometry">
+    <rect>
+     <x>860</x>
+     <y>530</y>
+     <width>81</width>
+     <height>91</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: transparent;</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="pixmap">
+    <pixmap>../../Sprites/Fichas/Simples/ficha-amarilla.png</pixmap>
+   </property>
+   <property name="scaledContents">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_fichas_color3">
+   <property name="geometry">
+    <rect>
+     <x>970</x>
+     <y>590</y>
+     <width>161</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: transparent;
+font-size:9pt</string>
+   </property>
+   <property name="text">
+    <string>Fichas en color: 0</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_fichas_victoria4">
+   <property name="geometry">
+    <rect>
+     <x>970</x>
+     <y>810</y>
+     <width>161</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: transparent;
+font-size:9pt</string>
+   </property>
+   <property name="text">
+    <string>Fichas en victoria: 0</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_jugador4">
+   <property name="geometry">
+    <rect>
+     <x>970</x>
+     <y>680</y>
+     <width>171</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: transparent;
+font-size: 12pt;
+font-weight: bold;</string>
+   </property>
+   <property name="text">
+    <string>Jugador 4</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="contador_turno4">
+   <property name="geometry">
+    <rect>
+     <x>970</x>
+     <y>720</y>
+     <width>71</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: transparent;
+font-size:9pt</string>
+   </property>
+   <property name="text">
+    <string>Turno: 4</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_fichas_base4">
+   <property name="geometry">
+    <rect>
+     <x>970</x>
+     <y>750</y>
+     <width>161</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: transparent;
+font-size:9pt</string>
+   </property>
+   <property name="text">
+    <string>Fichas en base: 2</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="ficha_rojo3">
+   <property name="geometry">
+    <rect>
+     <x>860</x>
+     <y>720</y>
+     <width>81</width>
+     <height>91</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: transparent;</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="pixmap">
+    <pixmap>../../Sprites/Fichas/Simples/ficha-roja.png</pixmap>
+   </property>
+   <property name="scaledContents">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_fichas_color4">
+   <property name="geometry">
+    <rect>
+     <x>970</x>
+     <y>780</y>
+     <width>161</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: transparent;
+font-size:9pt</string>
+   </property>
+   <property name="text">
+    <string>Fichas en color: 0</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="ficha_rojo2">
+   <property name="geometry">
+    <rect>
+     <x>50</x>
+     <y>730</y>
+     <width>81</width>
+     <height>91</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: transparent;</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="pixmap">
+    <pixmap>../../Sprites/Fichas/Simples/ficha-roja.png</pixmap>
+   </property>
+   <property name="scaledContents">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="QLabel" name="ficha_rojo1">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>730</y>
+     <width>81</width>
+     <height>91</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: transparent;</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="pixmap">
+    <pixmap>../../Sprites/Fichas/Simples/ficha-roja.png</pixmap>
+   </property>
+   <property name="scaledContents">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="QLabel" name="ficha_amarillo1">
+   <property name="geometry">
+    <rect>
+     <x>730</x>
+     <y>150</y>
+     <width>81</width>
+     <height>91</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: transparent;</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="pixmap">
+    <pixmap>../../Sprites/Fichas/Simples/ficha-amarilla.png</pixmap>
+   </property>
+   <property name="scaledContents">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="QLabel" name="ficha_amarillo2">
+   <property name="geometry">
+    <rect>
+     <x>690</x>
+     <y>150</y>
+     <width>81</width>
+     <height>91</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: transparent;</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="pixmap">
+    <pixmap>../../Sprites/Fichas/Simples/ficha-amarilla.png</pixmap>
+   </property>
+   <property name="scaledContents">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="QLabel" name="ficha_verde1">
+   <property name="geometry">
+    <rect>
+     <x>690</x>
+     <y>730</y>
+     <width>81</width>
+     <height>91</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: transparent;</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="pixmap">
+    <pixmap>../../Sprites/Fichas/Simples/ficha-verde.png</pixmap>
+   </property>
+   <property name="scaledContents">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="QLabel" name="ficha_verde2">
+   <property name="geometry">
+    <rect>
+     <x>730</x>
+     <y>730</y>
+     <width>81</width>
+     <height>91</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: transparent;</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="pixmap">
+    <pixmap>../../Sprites/Fichas/Simples/ficha-verde.png</pixmap>
+   </property>
+   <property name="scaledContents">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_error">
+   <property name="geometry">
+    <rect>
+     <x>170</x>
+     <y>410</y>
+     <width>901</width>
+     <height>91</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font-size: 24pt;
+background-color: lightgrey;</string>
+   </property>
+   <property name="text">
+    <string> Servidor caído, la ventana se cerrará en 3, 2, 1...</string>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

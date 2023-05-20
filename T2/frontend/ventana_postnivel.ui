@@ -1,0 +1,304 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Form</class>
+ <widget class="QWidget" name="Form">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>971</width>
+    <height>809</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color: rgb(33, 30, 47);</string>
+  </property>
+  <widget class="QLabel" name="label">
+   <property name="geometry">
+    <rect>
+     <x>320</x>
+     <y>80</y>
+     <width>321</width>
+     <height>51</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: transparent;
+color: white;
+font-size: 20pt</string>
+   </property>
+   <property name="text">
+    <string>RESUMEN DEL NIVEL</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_2">
+   <property name="geometry">
+    <rect>
+     <x>740</x>
+     <y>60</y>
+     <width>151</width>
+     <height>161</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: transparent
+</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="pixmap">
+    <pixmap>../Sprites/Terminator-Dog/Dog2.png</pixmap>
+   </property>
+   <property name="scaledContents">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="QLabel" name="nivel_actual_label">
+   <property name="geometry">
+    <rect>
+     <x>190</x>
+     <y>200</y>
+     <width>131</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: transparent;
+color: white;
+font-size: 14pt</string>
+   </property>
+   <property name="text">
+    <string>Nivel actual</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="balas_restantes_label">
+   <property name="geometry">
+    <rect>
+     <x>190</x>
+     <y>280</y>
+     <width>171</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: transparent;
+color: white;
+font-size: 14pt</string>
+   </property>
+   <property name="text">
+    <string>Balas restantes</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="tiempo_restante_label">
+   <property name="geometry">
+    <rect>
+     <x>190</x>
+     <y>360</y>
+     <width>181</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: transparent;
+color: white;
+font-size: 14pt</string>
+   </property>
+   <property name="text">
+    <string>Tiempo restante</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="puntaje_total_label">
+   <property name="geometry">
+    <rect>
+     <x>190</x>
+     <y>440</y>
+     <width>141</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: transparent;
+color: white;
+font-size: 14pt</string>
+   </property>
+   <property name="text">
+    <string>Puntaje total</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="puntaje_obtenido_nivel_label">
+   <property name="geometry">
+    <rect>
+     <x>190</x>
+     <y>520</y>
+     <width>281</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: transparent;
+color: white;
+font-size: 14pt</string>
+   </property>
+   <property name="text">
+    <string>Puntaje obtenido en nivel</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="contador_nivel">
+   <property name="geometry">
+    <rect>
+     <x>590</x>
+     <y>200</y>
+     <width>41</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: transparent;
+color: white;
+font-size: 14pt</string>
+   </property>
+   <property name="text">
+    <string>2</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="contador_balas_restantes">
+   <property name="geometry">
+    <rect>
+     <x>590</x>
+     <y>270</y>
+     <width>161</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: transparent;
+color: white;
+font-size: 14pt</string>
+   </property>
+   <property name="text">
+    <string>5</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="contador_tiempo_restante">
+   <property name="geometry">
+    <rect>
+     <x>590</x>
+     <y>360</y>
+     <width>151</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: transparent;
+color: white;
+font-size: 14pt</string>
+   </property>
+   <property name="text">
+    <string>20 seg</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="contador_puntaje_total">
+   <property name="geometry">
+    <rect>
+     <x>590</x>
+     <y>440</y>
+     <width>281</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: transparent;
+color: white;
+font-size: 14pt</string>
+   </property>
+   <property name="text">
+    <string>4000 puntos</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="contador_puntaje_nivel">
+   <property name="geometry">
+    <rect>
+     <x>590</x>
+     <y>520</y>
+     <width>281</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: transparent;
+color: white;
+font-size: 14pt</string>
+   </property>
+   <property name="text">
+    <string>1000 puntos</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="mensaje_nivel">
+   <property name="geometry">
+    <rect>
+     <x>300</x>
+     <y>590</y>
+     <width>411</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: green;
+color: white;
+font-size: 14pt;
+border-radius: 10</string>
+   </property>
+   <property name="text">
+    <string>!Puedes dominar el siguiente nivel!</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="boton_siguiente_nivel">
+   <property name="geometry">
+    <rect>
+     <x>220</x>
+     <y>670</y>
+     <width>161</width>
+     <height>71</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: grey;
+color: white;
+font-size: 14pt;
+border-radius: 20;
+
+</string>
+   </property>
+   <property name="text">
+    <string>Siguiente nivel</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="boton_salir">
+   <property name="geometry">
+    <rect>
+     <x>590</x>
+     <y>670</y>
+     <width>161</width>
+     <height>71</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: grey;
+color: white;
+font-size: 14pt;
+border-radius: 20
+
+</string>
+   </property>
+   <property name="text">
+    <string>Salir</string>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
